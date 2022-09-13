@@ -1,0 +1,56 @@
+<form>
+  <div class="col-6 offset-3">
+  <div class="mb-3">
+    <label >Rut: </label>
+    <input
+    type="text"
+    (input)="cambiarRut($event)"
+    [value]="nuevoAlumno.rut">
+
+  </div>
+
+  <div class="mb-3">
+    <label >Nombre: </label>
+    <input
+    type="text"
+    (input)="cambiarNombre($event)"
+    [value]="nuevoAlumno.nombre">
+
+  </div>
+
+  <div class="mb-3">
+    <label >Apellido: </label>
+    <input
+    type="text"
+    (input)="cambiarApellido($event)"
+    [value]="nuevoAlumno.apellido">
+
+  </div>
+
+  <div class="mb-3">
+    <label >Edad: </label>
+    <input
+    type="number"
+    (input)="cambiarEdad($event)"
+    [value]="nuevoAlumno.edad">
+
+  </div>
+
+  <div class="mb-3">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Seccion</option>
+    </select>
+  </div>
+
+  <button
+    type="button"
+    class="btn btn-success"
+    (click)="registrarAlumno()"
+  >Registrar</button>
+</div>
+</form>
+
+
+
+
+

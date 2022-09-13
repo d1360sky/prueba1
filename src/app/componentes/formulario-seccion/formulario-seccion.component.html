@@ -1,0 +1,28 @@
+<form>
+  <div class="col-6 offset-3">
+    <div class="mb-3">
+      <label >ID: </label>
+      <input
+      type="number"
+      [value]="nuevaSeccion.id"
+      readonly>
+    </div>
+  <div class="mb-3">
+    <label >Seccion: </label>
+    <input
+    type="text"
+    (input)="cambiarSeccion($event)"
+    [value]="nuevaSeccion.nombre">
+    {{nuevaSeccion.nombre}}
+  </div>
+
+  <button
+    type="button"
+    class="btn btn-success"
+    (click)="registrarSeccion()"
+  >Registrar</button>
+</div>
+</form>
+
+
+

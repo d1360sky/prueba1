@@ -1,0 +1,11 @@
+<h2>REGISTRAR SECCION</h2>
+<hr>
+<app-formulario-seccion (salidaSeccion)="nuevaSeccion($event)"></app-formulario-seccion>
+
+<h2>REGISTRAR ALUMNO</h2>
+<hr>
+<app-formulario-alumno (salidaAlumno)="nuevoAlumno($event)"></app-formulario-alumno>
+
+<h2>LISTA DE ALUMNOS</h2>
+<hr>
+<app-lista-alumnos [alumnos]="alumnos"></app-lista-alumnos>

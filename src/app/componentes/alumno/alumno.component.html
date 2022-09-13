@@ -1,0 +1,31 @@
+<p *ngIf="alumno.rut; then rutIf; else rutElse"></p>
+<ng-template #rutIf>
+  <p>{{alumno.rut}}</p>
+</ng-template>
+<ng-template #rutElse>
+  <p>Sin rut</p>
+</ng-template>
+
+<p *ngIf="alumno.nombre; then nombreIf; else nombreElse"></p>
+<ng-template #nombreIf>
+  <p>{{alumno.nombre}}</p>
+</ng-template>
+<ng-template #nombreElse>
+  <p>Sin nombre</p>
+</ng-template>
+
+<p *ngIf="alumno.apellido; then apellidoIf; else apellidoElse"></p>
+<ng-template #apellidoIf>
+  <p>{{alumno.apellido}}</p>
+</ng-template>
+<ng-template #apellidoElse>
+  <p>Sin apellido</p>
+</ng-template>
+
+<p *ngIf="alumno.edad; then edadIf; else edadElse"></p>
+<ng-template #edadIf>
+  <p>{{alumno.edad}}</p>
+</ng-template>
+<ng-template #edadElse>
+  <p>Sin edad</p>
+</ng-template>
